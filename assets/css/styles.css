@@ -18,7 +18,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, #ff6a00, #ff8c42, #ffc97b, #ffe8a3);
+    background: linear-gradient(315deg, rgba(192, 80, 77, 1) 0%, rgba(228, 139, 72, 1) 40%, rgba(244, 196, 48, 1) 70%, rgba(255, 229, 120, 1) 100%);
+    background-size: 400% 400%;
+    background-attachment: fixed;
 }
 
 main {
@@ -59,6 +61,10 @@ nav {
     right:0;
 }
 
+#navbar li:hover {
+    border-bottom: 1px solid black;
+}
+
 
 /*hr bar*/ 
 #intro hr {
@@ -67,7 +73,7 @@ nav {
 }
 
 
-/*projects*/ 
+/*projects home page */ 
 main h2 {
     font-family:"Montserrat", sans-serif ;
 }
@@ -97,9 +103,45 @@ main p {
 
 footer {
     background-color: blueviolet;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+footer {
+    background-color: transparent;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Center everything horizontally */
+    padding: 20px 0; /* Add some padding */
+}
+
+#socialicons h2 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding-bottom: 10px; /* Adds space between the name and icons */
+    font-size: 2rem; /* Adjust size of the name */
+    color: black;
+}
+
+#iconcontainer {
+    display: flex;
+    justify-content: center; /* Center icons */
+    gap: 20px; /* Space between the icons */
+    margin-top: 10px;
+    list-style: none;
+}
+
+#socialicons i {
+    color: black;
+    font-size: 40px; /* Adjust the size of the icons */
+    transition: transform 0.3s; /* Optional: Add a hover effect */
+    
+}
+
+#socialicons i:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
 }
 
 
