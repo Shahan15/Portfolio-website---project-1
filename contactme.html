@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahan's portfolio</title>
+    <title>Contact me </title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io /favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io /favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
+<style>
+</style>
 <body>
     <header>
-        <h1>Hello, I'm Shahan</h1>
        <div id="navbar">
             <nav>
                 <ul>
@@ -22,35 +23,20 @@
                 </ul>
             </nav>
         </div>
-        
     </header>
-    <div id="intro">
-    <p>Full-stack software developer bootcamp student with a first class Bsc in Chemistry </p>
-    <br>
-    experience working with <strong>JavaScript, HTML5, CSS3, Python</strong>  and <strong>PostgreSQL</strong> . I value <strong>adaptability</strong> and  <strong>hard work</strong> 
-    and aim to build impactful application and projects. 
-    <hr>
-    </div> 
-    <main>
-        <section id="projectcards">
-            <div class="box" id="project1">
-                <h2>Project 1</h2>
-                <p>This website was built as my first project, fully response and using solely HTML5 and CSS3 </p>
-                <a href=""></a>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left"> 
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr style="color: black;">
             </div>
-            <br>
-            <div class="box" id="project2">
-                <h2>Project 2</h2>
-                <p>Building fully functional <a href="">Tetris</a> game using Javascript </p>
-            </div>
-            <br>
-            <div class="box" id="project3">
-                <h2>Project 3</h2>
-                <p>Description of the project will go here </p>
-            </div>
-        </section>
-        
-    </main>
+            <input type="hidden" name="access_key" value="0e159c7c-25df-4650-a722-e0d122d88a7d">
+            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your message"  class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="/assets/images /arrow_icon.png" alt="image of an arrow"></button>
+        </form>
+    </div>
 
     <footer>
         <div id="socialicons">
@@ -71,5 +57,3 @@
     <script src="https://kit.fontawesome.com/47cd942cbe.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
