@@ -118,6 +118,10 @@ main p {
     color: black;
 }
 
+.box a:visited {
+    color: black;
+}
+
 
 .box:hover  {
     transform:translateY(-10px);
