@@ -118,7 +118,7 @@ main p {
 }
 
 
-/*About me styles*/ 
+/*About me page styles*/ 
 .aboutmecard {
     display: flex;
     flex-direction: column; /* stacks the flex items in a column*/
