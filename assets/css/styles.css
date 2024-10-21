@@ -15,11 +15,17 @@
 /* general styles */ 
 
 body {
-    min-height: 100vh;
+    font-size: 14px;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(315deg, rgba(192, 80, 77, 1) 0%, rgba(228, 139, 72, 1) 40%, rgba(244, 196, 48, 1) 70%, rgba(255, 229, 120, 1) 100%);
+    background: linear-gradient(315deg, rgba(192, 80, 77, 1) 0%, rgba(228, 139, 72, 1) 
+    40%, rgba(244, 196, 48, 1) 70%, rgba(255, 229, 120, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
+
 
 main {
     flex: 1 0 auto;
@@ -30,8 +36,8 @@ header h1 {
 }
 
 h1 { 
-    margin-top: 100px;
-    font-size: 350%;
+    margin-top: 60px;
+    font-size: 345%;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -39,6 +45,10 @@ h1 {
     margin:20px ;
     font-family: "Space Grotesk", sans-serif;
     text-align: justify;
+}
+
+#intro p {
+    font-size: 16px;
 }
 
 
@@ -82,10 +92,12 @@ nav {
 /*projects home page */ 
 main h2 {
     font-family:"Montserrat", sans-serif ;
+    color: #666;
 }
 
 main p {
     font-family: "Space Grotesk", sans-serif;
+    color: #666
 }
 
 .box {
@@ -96,6 +108,7 @@ main p {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: width 0.5s, height 0.5s, transform 0.5s;
+    
 }
 
 
@@ -104,6 +117,107 @@ main p {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     
 }
+
+
+/*About me styles*/ 
+.aboutmecard {
+    display: flex;
+    flex-direction: column; /* stacks the flex items in a column*/
+    justify-content: flex-start; /* sets the flex item to the start of the container */
+    align-items: center;
+    height: auto; /* Set height for the parent based on viewport height */
+    width: 90vw; /* Set height for the parent based on viewport width */
+    margin: 50px auto; 
+    margin-top: 100px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+.aboutmecard:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#img1ab {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+
+.aboutmecard p {
+    font-size: 14px;
+    text-align: justify; 
+    margin-top: 10px; 
+}
+
+.aboutmecard ul {
+    font-size: 14px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #666
+}
+
+/*pdf icons in about me */ 
+
+#pdficons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center icons */
+    gap: 20px; /* Space between the icons */
+    margin-top: 10px;
+    list-style: none;
+}
+
+
+#pdficons img {
+    width: 50px; 
+    height: auto; 
+    margin: 5px; 
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+
+#pdficons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    list-style: none;
+}
+
+#pdficons img:hover {
+    transform: scale(1.5);
+}
+
+.pdfcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pdftitle {
+    font-weight: bold;
+}
+
+#cv,#nc {
+    padding-top: 17px;
+}
+
+#cv img {
+    margin-top: 0px;
+    height:auto;
+    width: 60px;
+}
+
+
+
+
+
 
 /*footer styles*/ 
 
@@ -226,14 +340,24 @@ footer {
 }
 
 
-/*phones*/ 
+/*phones*/
 
 @media screen and (max-width: 576px) {
-    .contact-inputs {
-        width:100%;
-    }
-}
 
+    #socialicons h2 {
+        font-size: 20px;
+    }
+
+    #socialicons i {
+        font-size: 30px;
+    }
+
+    #pdficons {
+        
+    }
+
+    
+}
 
 /* laptop */ 
 @media screen and (min-width: 992px) {
@@ -244,7 +368,29 @@ footer {
     }
     nav {
         margin: 20px;
+        font-size: 120%;
     }
+
+    .aboutmecard {
+        height: 80vh;
+        width: 80vh;
+    }
+
+    #img1ab {
+        width: 200px; 
+        height: 200px;
+    }
+    
+    .aboutmecard p {
+        font-size: 15px;
+    }
+
+    .aboutmecard ul {
+        font-size:15px;
+
+    }
+
+
 }
 
 
