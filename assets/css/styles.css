@@ -157,7 +157,7 @@ main p {
 }
 
 .aboutmecard ul {
-    font-size: 14px;
+    font-size: 13px;
     font-family: "Space Grotesk", sans-serif;
     color: #666
 }
@@ -186,7 +186,7 @@ main p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 40px;
     list-style: none;
 }
 
@@ -213,11 +213,6 @@ main p {
     height:auto;
     width: 60px;
 }
-
-
-
-
-
 
 /*footer styles*/ 
 
@@ -380,6 +375,10 @@ footer {
         width: 200px; 
         height: 200px;
     }
+
+    .aboutmecard {
+        height:auto;
+    }
     
     .aboutmecard p {
         font-size: 15px;
@@ -390,7 +389,11 @@ footer {
 
     }
 
+    #szr img {
+        margin-top:20px ;
+    }
 
+    
 }
 
 
