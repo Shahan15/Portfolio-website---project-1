@@ -23,7 +23,6 @@ body {
     40%, rgba(244, 196, 48, 1) 70%, rgba(255, 229, 120, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 
@@ -251,12 +250,12 @@ footer {
 #socialicons i {
     color: black;
     font-size: 40px; /* Adjust the size of the icons */
-    transition: transform 0.3s; /* Optional: Add a hover effect */
+    transition: transform 0.3s; 
     
 }
 
 #socialicons i:hover {
-    transform: scale(1.2); /* Enlarge icon on hover */
+    transform: scale(1.2); 
 }
 
 
@@ -347,12 +346,34 @@ footer {
         font-size: 30px;
     }
 
-    #pdficons {
-        
+    .contact-left-title {
+        font-size: 28px; 
     }
 
-    
+    .contact-inputs {
+        width: 100%;  
+        height: 45px; 
+    }
+
+    .contact-left textarea {
+        height: 120px; 
+    }
+
+    .contact-left button {
+        padding: 10px 20px; 
+        font-size: 14px; /
+    }
 }
+    
+
+/*tablets*/
+
+@media screen and (max-width: 768px) {
+    #szr img {
+        margin-top:20px ;
+    }
+}
+
 
 /* laptop */ 
 @media screen and (min-width: 992px) {
@@ -393,8 +414,8 @@ footer {
         margin-top:20px ;
     }
 
-    
 }
+
 
 
 
