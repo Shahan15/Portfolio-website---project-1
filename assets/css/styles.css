@@ -345,6 +345,11 @@ footer {
     height: 15px;
 }
 
+button:hover, 
+#submit-button:hover {
+    cursor: pointer;
+}
+
 
 /*phones*/
 
